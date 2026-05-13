@@ -1,0 +1,25 @@
+/* Main */
+.mainpage h1 {
+    font-family: 'Plus Jakarta Sans', Courier, monospace;
+    font-size: 45px;
+    padding-right: 50%;
+}
+.mainpage p {
+    font-family: 'Quicksand', Geneva, Verdana, sans-serif;
+}
+.mainpage {
+    display: inline-block;
+    margin-left: 40px;
+
+}
+.collectionred {
+   background-color: #f5c6c6; /* Your pink color */
+  color: #a82424;           /* Your red text color */
+  padding: 10px 20px;       /* Adds space around the text inside */
+  border-radius: 50px;      /* Gives it that pill shape */
+  font-weight: 600;
+    width: fit-content;
+}
+.paddingmainpage{
+    padding-right: 60%;
+}
