@@ -4,13 +4,20 @@
     font-size: 45px;
     padding-right: 50%;
 }
-.mainpage p {
+h2 {
+    font-family: 'Quicksand', Geneva, Verdana, sans-serif;
+}
+h1 {
+    font-family: 'Quicksand', Geneva, Verdana, sans-serif;
+}
+p {
     font-family: 'Quicksand', Geneva, Verdana, sans-serif;
 }
 .mainpage {
     display: inline-block;
     margin-left: 40px;
     position: relative;
+    padding: 100px;
 
 }
 .collectionred {
@@ -31,4 +38,35 @@
     width: 200px;
     height: auto;
     
+}
+.presentationtitle{
+    text-align: center;
+
+}
+.presentationducks {
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    border-radius: 10px;
+}
+.presentationduckscontainer{
+    background-color: burlywood;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.presentationduckscontainer-highlight{
+    border: 1px, solid, black;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.presentationduckscontainer-highlight img{
+background-color: white;
+width: fit-content;
+border-radius: 10px;
+align-items: center;
 }
