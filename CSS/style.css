@@ -7,12 +7,6 @@
 h1, h2, h3, p {
     font-family: 'Quicksand', Geneva, Verdana, sans-serif;
 }
-h1 {
-    font-family: 'Quicksand', Geneva, Verdana, sans-serif;
-}
-p {
-    font-family: 'Quicksand', Geneva, Verdana, sans-serif;
-}
 .mainpage {
     display: inline-block;
     margin-left: 40px;
@@ -39,9 +33,10 @@ p {
     padding-right: 60%;
 }
 .mainpicture{
-    position: absolute;
-    top: 90px;
-    right: 400px;
+    position: static;
+    float: right;
+    bottom: 500px;
+    right: calc(50% + 200px);
     width: 200px;
     height: auto;
     
@@ -56,6 +51,7 @@ p {
     justify-content: center;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
     border-radius: 10px;
 }
