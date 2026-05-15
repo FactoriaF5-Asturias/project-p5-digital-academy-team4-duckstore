@@ -8,10 +8,10 @@ h1, h2, h3, p {
     font-family: 'Quicksand', Geneva, Verdana, sans-serif;
 }
 .mainpage {
-    display: inline-block;
-    margin-left: 40px;
-    position: relative;
-    padding: 100px;
+    display: flex;
+    margin-left: 150px;
+    flex-direction: row;
+    gap: -70px;
 
 }
 .button-shopnow {
@@ -30,14 +30,10 @@ h1, h2, h3, p {
     width: fit-content;
 }
 .paddingmainpage{
-    padding-right: 60%;
+    max-width: 500px;
 }
 .mainpicture{
-    position: static;
-    float: right;
-    bottom: 500px;
-    right: calc(50% + 200px);
-    width: 200px;
+    width: 800px;
     height: auto;
     
 }
