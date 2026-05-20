@@ -124,3 +124,14 @@ transition: transform 0.3s ease;
 .footer__social-icon:hover {
 transform: scale(1.1); /* Efecto al pasar el ratón */
 }
+
+.logo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo-image-header{
+    width: px;
+}
