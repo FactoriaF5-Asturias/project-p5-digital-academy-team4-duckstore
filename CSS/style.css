@@ -76,8 +76,8 @@ align-items: center;
 
 .footer__container {
 display: flex;
-justify-content: space-between; /* Separa los elementos a los extremos */
-align-items: center; /* Alinea los elementos verticalmente */
+justify-content: space-between;
+align-items: center; 
 padding: 20px 40px;
 background-color: #ffffff;
 border-top: 1px solid #e0e0e0;
@@ -123,4 +123,25 @@ transition: transform 0.3s ease;
 
 .footer__social-icon:hover {
 transform: scale(1.1); /* Efecto al pasar el ratón */
+}
+.header__logo-container {
+display: flex;
+align-items: center; 
+gap: 0px; 
+text-decoration: none; 
+color: inherit; 
+cursor: pointer; 
+}
+.header__brand-name {
+font-family: 'Plus Jakarta Sans', sans-serif;
+font-weight: bold;
+font-size: 25px;
+letter-spacing: -2px; 
+color: #6d2a0b; 
+text-transform: uppercase; 
+}
+
+.header__logo-image {
+width: 60px; 
+height: auto; 
 }
