@@ -1,0 +1,77 @@
+/* Main page */
+
+.mainpage h1 {
+    font-family: 'Quicksand', Courier, monospace;
+    font-size: 45px;
+    padding-right: 50%;
+}
+h1, h2, h3, p {
+    font-family: 'Quicksand', Geneva, Verdana, sans-serif;
+}
+.mainpage {
+    display: inline-block;
+    margin-left: 40px;
+    position: relative;
+    padding: 100px;
+
+}
+.button-shopnow {
+    background-color: rgb(255, 204, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.collectionred {
+   background-color: #f5c6c6; /* Your pink color */
+    color: #a82424;           /* Your red text color */
+    padding: 10px 20px;       /* Adds space around the text inside */
+    border-radius: 50px;      /* Gives it that pill shape */
+    font-weight: 600;
+    width: fit-content;
+}
+.paddingmainpage{
+    padding-right: 60%;
+}
+.mainpicture{
+    position: static;
+    float: right;
+    bottom: 500px;
+    right: calc(50% + 200px);
+    width: 200px;
+    height: auto;
+    
+}
+.presentationtitle{
+    text-align: center;
+
+}
+.presentationducks {
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-radius: 10px;
+}
+.presentationduckscontainer{
+    background-color: burlywood;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.presentationduckscontainer-highlight{
+    border: 1px, solid, black;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.presentationducks img {
+background-color: white;
+height: auto;
+width: 350px;
+border-radius: 10px;
+align-items: center;
+}
