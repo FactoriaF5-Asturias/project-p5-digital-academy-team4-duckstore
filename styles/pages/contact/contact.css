@@ -1,0 +1,21 @@
+.contact-hero {
+    text-align: center;
+    background-color: burlywood;
+    border-radius: 8px;
+    padding: 40px 0% 20px;
+}
+
+.contact-hero-title{
+    font-family: 'Quicksand', 'Courier New', Courier, monospace;
+    font-size: 60px;
+    padding: 0% 0% 50px;
+}
+
+.contact-hero-explain {
+    font-size: 20px;
+}
+
+.contact-hero-subexplain {
+    font-size: 0.9em;
+    padding: 15px 0% 0% 0px;
+}
