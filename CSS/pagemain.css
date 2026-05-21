@@ -20,6 +20,7 @@ h1, h2, h3, p {
     border: none;
     padding: 10px 20px;
     border-radius: 40px;
+    font-size:20px;
     cursor: pointer;
 }
 .mainpage__collection-red {
