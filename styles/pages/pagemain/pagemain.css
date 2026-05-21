@@ -1,53 +1,50 @@
-/* Main page */
-
+/* Main */
 .mainpage h1 {
     font-family: 'Quicksand', Courier, monospace;
     font-size: 45px;
-    padding-right: 50%;
+    padding-right: 0px;
 }
 h1, h2, h3, p {
     font-family: 'Quicksand', Geneva, Verdana, sans-serif;
 }
 .mainpage {
-    display: inline-block;
-    margin-left: 40px;
-    position: relative;
-    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;;
+    gap: 10px;
+    padding-left: 200px;
 
 }
-.button-shopnow {
+.mainpage__button-shopnow {
     background-color: rgb(255, 204, 0);
     border: none;
     padding: 10px 20px;
     border-radius: 40px;
+    font-size:20px;
     cursor: pointer;
 }
-.collectionred {
+.mainpage__collection-red {
    background-color: #f5c6c6; /* Your pink color */
-    color: #a82424;           /* Your red text color */
-    padding: 10px 20px;       /* Adds space around the text inside */
-    border-radius: 50px;      /* Gives it that pill shape */
-    font-weight: 600;
+  color: #a82424;           /* Your red text color */
+  padding: 10px 20px;       /* Adds space around the text inside */
+  border-radius: 50px;      /* Gives it that pill shape */
+  font-weight: 600;
     width: fit-content;
 }
-.paddingmainpage{
-    padding-right: 60%;
+.mainpage_padding{
+    max-width: 500px;
 }
-.mainpicture{
-    position: static;
-    float: right;
-    bottom: 500px;
-    right: calc(50% + 200px);
-    width: 200px;
+.mainpage__picture{
+    width: 800px;
     height: auto;
     
 }
-.presentationtitle{
+.presentation-title{
     text-align: center;
 
 }
-.presentationducks {
-    background-color: antiquewhite;
+.presentation-ducks {
+    background-color: rgb(230, 230, 230);
     align-items: center;
     justify-content: center;
     display: flex;
@@ -56,22 +53,55 @@ h1, h2, h3, p {
     gap: 30px;
     border-radius: 10px;
 }
-.presentationduckscontainer{
-    background-color: burlywood;
+.presentation-ducks__container{
+    background-color: rgb(255, 255, 255);
     width: fit-content;
     border-radius: 10px;
     padding: 10px 20px;
+    box-shadow: 0px 0px 10px;
+    max-width: 350px;
 }
-.presentationduckscontainer-highlight{
+.presentation-ducks__container h3 {
+    display: inline-block;
+}
+.presentation-ducks__container-highlight{
+    position: relative;
     border: 1px, solid, black;
+    background-color: rgb(239, 245, 249);
     width: fit-content;
     border-radius: 10px;
     padding: 10px 20px;
+    box-shadow: 0px 0px 10px;
+    max-width: 350px;
 }
-.presentationducks img {
+.presentation-ducks__container-highlight h3 {
+    display: inline-block;
+}
+.presentation-ducks img {
 background-color: white;
 height: auto;
 width: 350px;
 border-radius: 10px;
 align-items: center;
+}
+.presentation-ducks__bestseller {
+    position:absolute;
+    display:inline-table;
+    right:20px;
+    top:-30px;
+    color: rgb(255, 255, 255);
+    font-weight:600;
+    background-color: #c01f1f;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.presentation-ducks__price {
+    width: fit-content;
+    display: inline;
+    background-color: #21B6F8;
+    color: #00658D;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-left: 160px;
+    padding: 5px 10px;
 }
