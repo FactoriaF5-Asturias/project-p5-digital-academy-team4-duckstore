@@ -23,7 +23,8 @@ body {
     flex-direction: column;
     max-width: 1000px;
     margin: 0 auto;
-    width: 100%;
+    width: 200px;
+    height: 275px;
 
 }
 .info {
@@ -34,4 +35,8 @@ body {
     border-radius: 12px;
     overflow:hidden;
     box-shadow: 0 4px 12px  rgb(221, 221, 255); 1
+}
+.precio{
+    font-weight: bold;
+    text-align: right;
 }
