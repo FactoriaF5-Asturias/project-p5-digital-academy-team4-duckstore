@@ -17,122 +17,90 @@
 
     <!-- Fuentes: "Plus Jakarta Sans" y "Quicksand" -->
 
-    <title>Duckstore</title>
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
-  </head>
-  <header></header>
-  <body>
-    <main>
-      <container class="mainpage">
-        <div>
-          <p class="collectionred">New Collection</p>
-        </div>
-        <div>
-          <h1>The world's finest rubber ducks</h1>
-          <p class="paddingmainpage">
-            Elevate your bath time and collector's shelf with our premium,
-            exuberantly designed rubber ducks. Squishy, vibrand and undeniably
-            joyful.
-          </p>
-        </div>
-        <button class="button-shopnow">Shop now</button>
+        <title>Duckstore</title>
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
 
-        <img
-          src="./assets/img/rubberduckplaceholder.png"
-          alt="Pato original"
-          class="mainpicture"
-        />
-      </container>
-      <section>
-        <container class="presentationtitle">
-          <h2>Featured Ducks</h2>
-          <p>
-            Discover our most loved floating companions crafted with care and a
-            blush of whimsy
-          </p>
-        </container>
-        <container class="presentationducks">
-          <div class="presentationduckscontainer">
-            <img
-              src="assets/img/rubberduckplaceholder.png"
-              alt="Pato malvado"
-            />
-            <h3>The evil one</h3>
-            <p>$13.37</p>
-            <p>t3h 3v1l dukkk is h3r3!!11!</p>
-          </div>
-          <div class="presentationduckscontainer-highlight">
-            <img
-              src="assets/img/rubberduckplaceholder.png"
-              alt="Pato malvado"
-            />
-            <h3>Original Duck</h3>
-            <p>$9.99</p>
-            <p>t3h 3v1l dukkk is h3r3!!11!</p>
-          </div>
-          <div class="presentationduckscontainer">
-            <img
-              src="assets/img/rubberduckplaceholder.png"
-              alt="Pato malvado"
-            />
-            <h3>Pirate Duck</h3>
-            <p>$14.99</p>
-            <p>t3h 3v1l dukkk is h3r3!!11!</p>
-          </div>
-        </container>
-      </section>
-    </main>
-  </body>
-  <footer class="footer">
-    <div class="footer__container">
-      <!-- Parte izquierda: Logo y Nombre -->
-      <div class="footer__logo">
-        <!--primero el texto DUCKSTORE-->
-        <a
-          href="index.html"
-          class="footer__logo-link"
-          aria-label="Ir a la página principal de DuckStore"
-        >
-          <span class="footer__brand-name">DUCKSTORE</span>
-          <img
-            src="assets/img/Duck logo.png"
-            alt="Logotipo de DuckStore"
-            class="footer__logo-img"
-          />
+    <body>
+        <header>
+    
+        <a href="index.html" class="header__logo-container">
+          <span class="header__brand-name">DUCKSTORE</span>
+          <img src="assets/img/Duck logo.png" alt="DuckStore Logo" class="header__logo-image">
         </a>
-      </div>
+        <nav class="main-nav">
+    <ul class="nav-list">
+        <li><a href="#" class="nav-link">Catalog</a></li>
+        <li><a href="#" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+<div class="header__cart">
+  <a href="#" class="header__cart-link" aria-label="View Shopping Cart">
+    <img src="assets/img/order cart img.png" alt="order cart img.png" class="header__cart-image" width="24" height="24">
+  </a>
+</div>
+      
+    </header>
+        <main>
+            <container class="mainpage">
+                <div>
+                    <p class="mainpage__collection-red">New Collection</p>
+                    <h1>The world's finest rubber ducks</h1>
+                    <p class="mainpage__padding">Elevate your bath time and collector's shelf with our premium, exuberantly designed rubber ducks. Squishy, vibrand and undeniably joyful.</p>
+                    <a href="Catalog"><button class="mainpage__button-shopnow">Shop now</button></a>
+                </div>
+                <div>
+                     <img src="./assets/img/alllducks.png" alt="Pato clásico" class="mainpage__picture">
+                </div>
+            </container>
+            <section>
+                <container class="presentation-title">
+                    <h2>Featured Ducks</h2>
+                    <p>Discover our most loved floating companions crafted with care and a blush of whimsy</p>
+                </container>
+                <container class="presentation-ducks">
+                    <div class="presentation-ducks__container">
+                        <a href="/Product"><img src="assets/img/evilduck.png" alt="Evil duck"></a>
+                        <br><h3>The evil one</h3> <p class="presentation-ducks__price">$13.37</p>
+                        <p>t3h 3v1l dukkk is h3r3!!11!</p>
+                    </div>
 
-      <!-- Parte central: Derechos de autor -->
-      <p class="footer__copyright">
-        &copy; 2026 DUCKSTORE. Todos los derechos reservados. Sigue nadando.
-      </p>
+                    
 
-      <!-- Parte derecha: Redes sociales -->
-      <div class="footer__social">
-        <a
-          href="https://www.instagram.com/"
-          class="footer__social-link"
-          aria-label="Ir a Instagram"
-        >
-          <img
-            src="assets/img/instagram logo.png"
-            alt="Icono de Instagram"
-            class="footer__social-icon"
-          />
-        </a>
-        <a
-          href="https://www.facebook.com/"
-          class="footer__social-link"
-          aria-label="Ir a Facebook"
-        >
-          <img
-            src="assets/img/facebook logo.png"
-            alt="Icono de Facebook"
-            class="footer__social-icon"
-          />
-        </a>
-      </div>
+                     </a><div class="presentation-ducks__container-highlight">
+                        <p class="presentation-ducks__bestseller">Bestseller!</p>
+                        <a href="/Product"><img src="assets/img/classicduck.png" alt="Classic duck"></a>
+                        <br><h3>Original Duck</h3> <p class="presentation-ducks__price">$9.99</p>
+                        <p>The timeless original. Perfect squish, perfect float. A must-have.</p>
+                    </div>
+
+
+
+                    <div class="presentation-ducks__container">
+                        <a href="/Product"><img src="assets/img/pirateduck.png" alt="Pirate Duck"></a>
+                        <br><h3>Pirate Duck</h3> <p class="presentation-ducks__price">$14.99</p>
+                        <p>Ready to sail the seven bathtubs in search of bubbly treasures!</p>
+                    </div>
+                </container>
+            </section>
+        </main>
+        <footer class="pie-de-pagina">
+  <div class="contenedor-footer">
+    <div class="info-empresa">
+      <p>&copy; 2026 DuckStore - Todos los derechos reservados.</p>
     </div>
-  </footer>
+    <nav class="enlaces-footer">
+      <ul>
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="redes-sociales">
+      <!-- Los iconos de redes sociales irán aquí -->
+    </div>
+  </div>
+</footer>
+    </body>
+
+
 </html>
