@@ -1,6 +1,7 @@
 import {ducks} from '../data/ducks.js';
 
 const catalogoContainer = document.getElementById('catalogo');
+const fitlerButtons = document.querySelectorAll('.fitlers__btn');
 
 const cards = ducks.map(duck =>`
 <article class="patos" data-id="${duck.id}">
@@ -11,12 +12,19 @@ const cards = ducks.map(duck =>`
     <span class="precio">${duck.price.toFixed(2).replace('.', ',')}€</span>
     <button class="add-to-cart" data-id="${duck.id}">Añadir al carrito</button>
     </div>
-  
- 
-
-
 </article>
 
   `)
 
-  catalogoContainer.innerHTML = cards. join('')
+  function renderCatalog(category) {
+  let filtered;
+
+  if (category === 'all'){
+    filtered= ducks;
+  } else {
+    filtered = ducks.filter(duck => duck.category === category)
+  }
+  }
+renderCatalog('all')
+catalogoContainer.innerHTML = cards.join('')
+catalogoContainer.innerHTML = renderCatalog.join('')
