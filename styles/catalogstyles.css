@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
 
+:root{
+    --color-fondo: #f0f4f8;
+    --color-superficie: #ffffff;
+    --color-texto: #1f2937;
+    --color-texto-suave: #6b7280;
+    --color-primario: #ffb703;
+    --color-primario-oscuro: #fb8500;
+    --color-acento: #219ebc;
+    --color-sombra: rgba(33, 158, 188, 0.18);
+
+    --espacio-xs: 0.5rem;
+    --espacio-sm: 0.75rem;
+    --espacio-md: 1rem;
+    --espacio-lg: 1.5rem;
+    --espacio-xl: 2rem;
+
+    --radio-sm: 8px;
+    --radio-md: 12px;
+    --radio-pill: 999px;
+
+    --transicion: 200ms ease;
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,13 +29,13 @@
 }
 
 body {
-    background-color: #f0f4f8;
+    background-color: var(--color-fondo);
     font-family:'Quicksand', Courier, monospace;
 }   
 .catalogo {
     display:grid;
     grid-template-columns:repeat(4, minmax(249px,1fr));
-    gap: 24px;
+    gap: var(--espacio-lg);
     padding: 32px;
     max-width: 1100px;
     margin: 0 auto;
@@ -28,15 +50,50 @@ body {
 
 }
 .info {
-    background-color: white;
-    padding: 18px;
+    background-color: var(--color-superficie);
+    padding: var(--espacio-md);
 }
 .patos{
-    border-radius: 12px;
+    border-radius: (var(--radio-md));
     overflow:hidden;
-    box-shadow: 0 4px 12px  rgb(221, 221, 255); 1
+    box-shadow: 0 4px 12px  rgb(221, 221, 255); 
 }
 .precio{
     font-weight: bold;
     text-align: right;
+}
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacio-sm);
+    max-width: 1100px;
+    margin: 0 auto var(--espacio-lg);
+    padding: 0 var(--espacio-md);
+}
+.filters__btn{
+    padding: var(--espacio-xs) var(--espacio-md);
+    border: none;
+    border-radius: var(--radio-pill);
+    background-color: var(--color-superficie);
+    color: var(--color-texto);
+    font-familty: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 6px var(--color-sombra);
+    transition: 
+        background-color var(--transicion),
+        transform var(--transicion),
+        box-shadow var(--transicion);
+}
+.filters__btn:hover {
+    background-color: var(--color-primario);
+    transform: translateY(-2px);
+}
+.filters__btn:focus-visible {
+    outline: 3px solid var(--color-acento);
+    outline-offset: 2px;
+}
+.filters__btn.is-active {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
 }
