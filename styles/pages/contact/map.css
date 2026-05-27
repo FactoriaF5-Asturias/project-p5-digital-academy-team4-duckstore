@@ -5,9 +5,10 @@
 }
 
 .map {
-    display: block;
+    display: flex;
     align-items: left;
     border-radius: 10px;
-    height: 60%;
-    width: auto;
+    height: 200px;
+    width: 100%;
+    max-width: 100%;
 }
