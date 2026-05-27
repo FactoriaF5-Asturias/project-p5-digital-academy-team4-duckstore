@@ -45,7 +45,7 @@ textarea {
     font-family: 'Quicksand';
     width: 69%;
     margin: 0px 0px 40px 40px;
-    padding: 10px 0px 0px 10px;
+    padding: 10px 10px 0px 10px;
 
     &:hover {
         border-color: #705d00;
@@ -54,6 +54,7 @@ textarea {
 
     &:focus-within {
         border-color: #705d00;
+        outline: none;
     }
 }
 
