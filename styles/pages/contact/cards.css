@@ -1,0 +1,67 @@
+.contact-card-links {
+    text-align: start;
+    background-color: #EEF5F7;
+    margin: 0% 35%;
+    border-radius: 10px;
+    padding: 40px 20px 40px 20px;
+}
+
+.contact-card-links h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #705d00;
+    cursor: default;
+    padding: 0px 0px 30px 40px;
+}
+
+.contact-card-links h3 {
+    padding-left: 90px;  
+    font-weight: bold;
+    cursor: default;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.contact-card-links p {
+    padding-left: 90px;
+    cursor: default;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #705d00;
+}
+
+.contact-card-links a {
+    font-family: 'Quicksand', 'Courier New', Courier, monospace;
+    color: #2ab9fc;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 10px;
+    display: inline-block;
+
+    &:hover {
+        color: #179ad7;
+        font-weight: bold;
+    }
+
+    &:active {
+        color: #0a658f;
+    }
+}
+
+.contact__icon {
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    margin-left: 40px;
+}
+
+.email {
+    padding: 20px 0% 0% 0%;
+}
+
+.hotline {
+    padding: 20px 0% 0% 0%;
+}
