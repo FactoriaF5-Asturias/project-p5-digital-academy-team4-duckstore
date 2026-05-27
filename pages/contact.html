@@ -16,10 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-
+  
     <title>Duckstore | Contact</title>
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body>
     <section class="contact-hero">
@@ -70,5 +69,18 @@
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d709.1311810994525!2d-63.664177!3d44.688485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a20bd569341cb%3A0x6488a24c325f02fa!2sHeart%20Shaped%20Pond!5e0!3m2!1ses!2sus!4v1779455500631!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
+    <section class="formulario__contacto">
+      <h2>Quacktact Us!</h2>
+        <form class="form" id="form">
+         <input type="text" placeholder="First Name" name="first__name" autocomplete="off" required>
+         <input type="text" placeholder="Last Name" name="last__name" autocomplete="off" required>
+         <input type="tel" placeholder="1-800-QUACK(78225)" name="put__phone" autocomplete="off">
+         <input type="email" placeholder="quack@duckstore.com" name="put__mail" autocomplete="off" required>
+         <textarea rows="6" cols="70" name="message" placeholder="Give us a quack!" name="enter__message" autocomplete="off" required></textarea>
+         <button type="submit" class="send" id="quack">Quack!</button>
+    </section>
+    <script async type="text/javascript" src="../js/contactpage/form.js"></script>
+    <br>
+    <br>
   </body>
 </html>
