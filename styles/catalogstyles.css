@@ -129,6 +129,7 @@ body {
 }
 .add-to-cart {
     display: inline-flex;
+    width: fit-content;
     align-items: center;
     justify-content: center;
     gap: var(--espacio-xs);
