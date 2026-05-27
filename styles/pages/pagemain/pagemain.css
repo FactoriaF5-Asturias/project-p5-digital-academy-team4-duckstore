@@ -97,6 +97,7 @@ align-items: center;
 }
 .presentation-ducks__price {
     width: fit-content;
+    position:absolute;
     display: inline;
     background-color: #21B6F8;
     color: #00658D;
