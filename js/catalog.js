@@ -14,13 +14,14 @@ function renderCatalog(category) {
 
     const cards = filtered.map(duck => `
         <article class="patos" data-id="${duck.id}">
-        <a href="product.html$id=${duck.id}" class="patos__link">
+        <a href="product.html?id=${duck.id}" class="patos__link">
             <img src="${duck.img}" alt="${duck.alt}">
             <div class="info">
                 <h2 class="titulo">${duck.name}</h2>
                 <p class="descripcion">${duck.description}</p>
                 <span class="precio">${duck.price.toFixed(2).replace('.', ',')}€</span>
-                <div class="add-row">
+                     </a>
+                     <div class="add-row">
                     <select class="qty-select" aria-label="Cantidad de ${duck.name} a añadir">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -29,8 +30,8 @@ function renderCatalog(category) {
                         <option value="5">5</option>
                         
                     </select>
-                <button class="add-to-cart" data-id="${duck.id}">Añadir al carrito</button>
-            </div>
+                     <button class="add-to-cart" data-id="${duck.id}">Añadir al carrito</button>
+                 </div>
             </div>
         </article>
     `);
