@@ -1,0 +1,6 @@
+@import url('./pages/pagemain/pagemain.css');
+@import url('./footer.css');
+@import url('../styles/header.css');
+@import url(./pages/contact/contact.css);
+@import url(./pages/contact/cards.css);
+@import url(./pages/contact/map.css);

@@ -127,3 +127,23 @@ body {
         padding: var(--espacio-xl);
     }
 }
+.add-to-cart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--espacio-xs);
+    margin-top: var(--espacio-sm);
+    padding: var(--espacio-sm) var(--espacio-lg);
+    border: none;
+    border-radius: var(--radio-pill);
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: 
+        background-color var(--transicion),
+        transform var(--transicion),
+        box-shadow var(--transicion);
+}
