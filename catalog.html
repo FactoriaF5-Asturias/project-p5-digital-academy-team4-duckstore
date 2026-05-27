@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Catálogo de Patos - Duckstore</title>
-        <link rel="stylesheet" href="./styles/catalogstyles.css">
-    </head>
-<body> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Patos - Duckstore</title>
+    <link rel="stylesheet" href="./styles/catalogstyles.css">
+</head>
+
+<body>
     <header>
     </header>
     <main>
+
+        <select aria-label="Cantidad">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
         <h1 class="explore-ducks">Nuestros patos</h1>
         <nav class="filters" aria-label="Filtrar por categoría">
             <button type="button" class="filters__btn is-active" data-filter="all">Todos</button>
             <button type="button" class="filters__btn" data-filter="clasicos">Clásicos</button>
             <button type="button" class="filters__btn" data-filter="aventureros">Aventureros</button>
             <button type="button" class="filters__btn" data-filter="villanos">Villanos</button>
-            
+
         </nav>
-    <section class="catalogo" id="catalogo" aria-live="polite">
-    </section>
+        <section class="catalogo" id="catalogo" aria-live="polite">
+        </section>
     </main>
-        <script type="module" src="./js/catalog.js"></script>
-    </body>
+    <script type="module" src="./js/catalog.js"></script>
+</body>
+
 </html>

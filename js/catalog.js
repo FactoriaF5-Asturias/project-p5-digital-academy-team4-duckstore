@@ -14,6 +14,7 @@ function renderCatalog(category) {
 
     const cards = filtered.map(duck => `
         <article class="patos" data-id="${duck.id}">
+        <a href="product.html$id=${duck.id}" class="patos__link">
             <img src="${duck.img}" alt="${duck.alt}">
             <div class="info">
                 <h2 class="titulo">${duck.name}</h2>
@@ -26,8 +27,10 @@ function renderCatalog(category) {
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
+                        
                     </select>
                 <button class="add-to-cart" data-id="${duck.id}">Añadir al carrito</button>
+            </div>
             </div>
         </article>
     `);
@@ -46,3 +49,17 @@ filterButtons.forEach(button => {
         button.classList.add('is-active');
     });
 });
+
+catalogoContainer.addEventListener('click', (clickevent) => {
+    const button = clickevent.target.closest('.add-to-cart');
+    if (!button) return;
+
+    const duckId = button.dataset.id;
+    const card = button.closest('.patos');
+    const select = card.querySelector('.qty-select');
+    const quantity = Number(select.value);
+
+
+    console.log(`Añadir ${quantity} de ${duckId}`);
+
+})
