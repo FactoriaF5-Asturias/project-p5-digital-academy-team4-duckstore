@@ -8,11 +8,10 @@ h1, h2, h3, p {
     font-family: 'Quicksand', Geneva, Verdana, sans-serif;
 }
 .mainpage {
-    display: flex;
+    display:flex;
     flex-direction: row;
-    justify-content:flex-start;;
-    gap: 10px;
-    padding-left: 50px;
+    gap: 20px;
+    padding-left: 20px;
 
 }
 .mainpage__button-shopnow {
@@ -32,10 +31,11 @@ h1, h2, h3, p {
     width: fit-content;
 }
 .mainpage_padding{
-    max-width: 500px;
+    max-width: 300px;
 }
 .mainpage__picture{
     width: 800px;
+    float:inline-end;
     height: auto;
     
 }
