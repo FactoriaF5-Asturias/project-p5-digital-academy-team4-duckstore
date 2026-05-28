@@ -1,0 +1,77 @@
+.formulario__contacto h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #705d00;
+    cursor: default;
+    padding: 0px 0px 30px 40px;
+}
+
+.formulario__contacto {
+    text-align: start;
+    background-color: #EEF5F7;
+    margin: 0% 35%;
+    border-radius: 10px;
+    padding: 40px 20px 40px 20px;
+
+}
+
+input {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 1px #EEF5F7 solid;
+    font-family: 'Quicksand';
+    width: 30%;
+    height: 30px;
+    margin: 0px 0px 40px 40px;
+    padding: 0px 0px 0px 10px;
+    display: inline-flex;
+
+    &:hover {
+        border-color: #705d00;
+        transform: scale(1.05);
+    }
+
+    &:focus-within {
+        outline: none;
+        border-color: #705d00;
+    }
+}
+
+
+textarea {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 1px #EEF5F7 solid;
+    font-family: 'Quicksand';
+    width: 69%;
+    margin: 0px 0px 40px 40px;
+    padding: 10px 10px 0px 10px;
+
+    &:hover {
+        border-color: #705d00;
+        transform: scale(1.01);
+    }
+
+    &:focus-within {
+        border-color: #705d00;
+        outline: none;
+    }
+}
+
+
+button {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    margin: 0px 0px 0px 40px;
+    border: 1px #88d4f7 solid;
+    border-radius: 10px;
+    font-family: 'Quicksand';
+    background-color: #88d4f7;
+    display: flex;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        border: 1px #705d00 solid;
+    }
+}
