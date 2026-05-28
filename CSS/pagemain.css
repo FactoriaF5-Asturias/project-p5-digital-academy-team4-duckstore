@@ -12,7 +12,7 @@ h1, h2, h3, p {
     flex-direction: row;
     justify-content:flex-start;;
     gap: 10px;
-    padding-left: 200px;
+    padding-left: 50px;
 
 }
 .mainpage__button-shopnow {
