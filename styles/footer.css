@@ -1,0 +1,50 @@
+.footer__container {
+display: flex;
+justify-content: space-between; /* Separa los elementos a los extremos */
+align-items: center; /* Alinea los elementos verticalmente */
+padding: 20px 40px;
+background-color: #ffffff;
+border-top: 1px solid #e0e0e0;
+}
+
+/* Configuración del Logo */
+.footer__logo {
+display: flex;
+align-items: center;
+gap:0px;
+}
+.footer__logo-link {text-decoration: none;color: inherit;display:inline-flex ;align-items: center;} /* Elimina el subrayado y mantiene el color del texto */
+.footer__logo-img {
+width: 60px; /* Tamaño pequeño para el logo */
+}
+.footer__brand-name {
+font-weight: bold;
+font-family: 'Plus Jakarta Sans', sans-serif;
+letter-spacing: -2px;
+font-size: 25px;
+color: #6d2a0b;
+}
+
+/* Configuración del Texto de Copyright */
+.footer__copyright {
+    font-family: 'Quicksand', sans-serif;
+font-size: 0.85rem;
+color: #1611b3;
+margin: 0;
+}
+
+/* Configuración de Redes Sociales */
+.footer__social {
+display: flex;
+gap: 15px; /* Espacio entre los iconos */
+}
+
+.footer__social-icon {
+width: 50px; /* Tamaño pequeño para los iconos sociales */
+height: auto;
+transition: transform 0.3s ease;
+}
+
+.footer__social-icon:hover {
+transform: scale(1.1); /* Efecto al pasar el ratón */
+}

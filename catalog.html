@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Patos - Duckstore</title>
+    <link rel="stylesheet" href="./styles/catalogstyles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html" class="header__logo-container">
+            <span class="header__brand-name">DUCKSTORE</span>
+            <img src="assets/img/Duck logo.png" alt="DuckStore Logo" class="header__logo-image">
+        </a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Catalog</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header__cart">
+            <a href="#" class="header__cart-link" aria-label="View Shopping Cart">
+                <img src="assets/img/order cart img.png" alt="order cart img.png" class="header__cart-image" width="24"
+                    height="24">
+            </a>
+        </div>
+
+    </header>
+    <main>
+
+        <h1 class="explore-ducks">Nuestros patos</h1>
+        <nav class="filters" aria-label="Filtrar por categoría">
+            <button type="button" class="filters__btn is-active" data-filter="all">Todos</button>
+            <button type="button" class="filters__btn" data-filter="clasicos">Clásicos</button>
+            <button type="button" class="filters__btn" data-filter="aventureros">Aventureros</button>
+            <button type="button" class="filters__btn" data-filter="villanos">Villanos</button>
+
+        </nav>
+        <section class="catalogo" id="catalogo" aria-live="polite">
+        </section>
+    </main>
+    <script type="module" src="./js/catalog.js"></script>
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Parte izquierda: Logo y Nombre -->
+            <div class="footer__logo">
+                <!--primero el texto DUCKSTORE-->
+                <a href="index.html" class="footer__logo-link" aria-label="Ir a la página principal de DuckStore">
+                    <span class="footer__brand-name">DUCKSTORE</span>
+                    <img src="assets/img/Duck logo.png" alt="Logotipo de DuckStore" class="footer__logo-img" />
+                </a>
+            </div>
+
+            <!-- Parte central: Derechos de autor -->
+            <p class="footer__copyright">
+                &copy; 2026 DUCKSTORE. Todos los derechos reservados. Sigue nadando.
+            </p>
+
+            <!-- Parte derecha: Redes sociales -->
+            <div class="footer__social">
+                <a href="https://www.instagram.com/" class="footer__social-link" aria-label="Ir a Instagram">
+                    <img src="assets/img/instagram logo.png" alt="Icono de Instagram" class="footer__social-icon" />
+                </a>
+                <a href="https://www.facebook.com/" class="footer__social-link" aria-label="Ir a Facebook">
+                    <img src="assets/img/facebook logo.png" alt="Icono de Facebook" class="footer__social-icon" />
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
