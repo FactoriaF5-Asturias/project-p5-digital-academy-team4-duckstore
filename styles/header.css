@@ -33,15 +33,9 @@ header {
 }
 
 .mainpage h1 {
-<<<<<<< HEAD
     font-family: 'Quicksand', Courier, monospace;
     font-size: 45px;
     padding-right: 10px;
-=======
-  font-family: "Quicksand", Courier, monospace;
-  font-size: 45px;
-  padding-right: 50%;
->>>>>>> pagecatalog
 }
 h1,
 h2,
