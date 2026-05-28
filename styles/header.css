@@ -9,7 +9,7 @@ header {
 .mainpage h1 {
     font-family: 'Quicksand', Courier, monospace;
     font-size: 45px;
-    padding-right: 50%;
+    padding-right: 10px;
 }
 h1, h2, h3, p {
     font-family: 'Quicksand', Geneva, Verdana, sans-serif;

@@ -2,13 +2,14 @@
 .mainpage h1 {
     font-family: 'Quicksand', Courier, monospace;
     font-size: 45px;
-    padding-right: 0px;
+    padding-right: 10px;
 }
 h1, h2, h3, p {
     font-family: 'Quicksand', Geneva, Verdana, sans-serif;
 }
 .mainpage {
     display:flex;
+    flex-basis: 20%;
     flex-direction: row;
     gap: 20px;
     padding-left: 20px;
