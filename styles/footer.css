@@ -13,7 +13,7 @@ display: flex;
 align-items: center;
 gap:0px;
 }
-.footer__logo-link {text-decoration: none;color: inherit;display:inline-flex ;align-items: center;} /* Elimina el subrayado y mantiene el color del texto */
+.footer__logo-link {gap: 10px; text-decoration: none;color: inherit;display:inline-flex ;align-items: center;} /* Elimina el subrayado y mantiene el color del texto */
 .footer__logo-img {
 width: 60px; /* Tamaño pequeño para el logo */
 }

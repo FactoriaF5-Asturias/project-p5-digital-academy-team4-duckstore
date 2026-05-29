@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles/styles.css" />
+
+    <title>Duckstore | Cart</title>
+
 </head>
 <body>
+<header>
     
+        <a href="/index.html" class="header__logo-container">
+          <span class="header__brand-name">DUCKSTORE</span>
+          <img src="../../assets/img/Duck logo.png" alt="DuckStore Logo" class="header__logo-image">
+        </a>
+        <nav class="main-nav">
+    <ul class="nav-list">
+        <li><a href="../../catalog.html" class="nav-link">Catalog</a></li>
+        <li><a href="/pages/contact.html" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+<div class="header__cart">
+  <a href="cart.html" class="header__cart-link" aria-label="View Shopping Cart">
+    <img src="../../assets/img/order cart img.png" alt="order cart img.png" class="header__cart-image" width="24" height="24">
+  </a>
+</div>
+      
+    </header>
+    <div id="products">
+        <div id="product-list"></div>
+        <aside id="cart">
+            <ul id="cart_items"></ul>
+            <div id="cart_total"></div>
+        </aside>
+    </div>
+   <footer class="footer">
+    <div class="footer__container">
+      <!-- Parte izquierda: Logo y Nombre -->
+      <div class="footer__logo">
+        <!--primero el texto DUCKSTORE-->
+        <a href="/index.html" class="footer__logo-link" aria-label="Ir a la página principal de DuckStore">
+          <span class="footer__brand-name">DUCKSTORE</span>
+          <img src="../../assets/img/Duck logo.png" alt="Logotipo de DuckStore" class="footer__logo-img" />
+        </a>
+      </div>
+
+      <!-- Parte central: Derechos de autor -->
+      <p class="footer__copyright">
+        &copy; 2026 DUCKSTORE. Todos los derechos reservados. Sigue nadando.
+      </p>
+
+      <!-- Parte derecha: Redes sociales -->
+      <div class="footer__social">
+        <a href="https://www.instagram.com/" class="footer__social-link" aria-label="Ir a Instagram">
+          <img src="../../assets/img/instagram logo.png" alt="Icono de Instagram" class="footer__social-icon" />
+        </a>
+        <a href="https://www.facebook.com/" class="footer__social-link" aria-label="Ir a Facebook">
+          <img src="../../assets/img/facebook logo.png" alt="Icono de Facebook" class="footer__social-icon" />
+        </a>
+      </div>
+    </div>
+  </footer>    
+    <script type="module" src="../../js/cart.js"></script>
 </body>
 </html>
