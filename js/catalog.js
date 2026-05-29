@@ -1,4 +1,5 @@
 import { ducks } from '../data/ducks.js';
+import { addToCart } from './cart-storage.js';
 
 const catalogoContainer = document.getElementById('catalogo');
 const filterButtons = document.querySelectorAll('.filters__btn');
@@ -61,6 +62,7 @@ catalogoContainer.addEventListener('click', (clickevent) => {
     const quantity = Number(select.value);
 
 
-    console.log(`Añadir ${quantity} de ${duckId}`);
+    addToCart(duckId, quantity);
+    alert(`Añadido ${quantity} al carrito`);
 
 })

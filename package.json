@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "test": "vitest"
+  },
+  "vitest": {
+    "test": {
+      "environment": "jsdom"
+    }
+  },
+  "devDependencies": {
+    "vitest": "^4.1.7"
+  }
+}

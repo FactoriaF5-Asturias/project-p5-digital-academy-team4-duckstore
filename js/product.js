@@ -1,4 +1,5 @@
 import { ducks } from '../data/ducks.js';
+import { addToCart } from './cart-storage.js';
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get('id');
@@ -30,11 +31,12 @@ if (!duck) {
                 </div>
             </div>
         </article>
-    ; `
+    `;
 
 document.getElementById('add-btn').addEventListener('click', () => {
     const quantity = Number(document.getElementById('qty').value);
-    console.log(`Añadir ${quantity} de ${duck.id}`);
+    addToCart(duck.id, quantity);
+    alert(`${quantity} ${duck.name} añadido al carrito`);
 });
 
 }
