@@ -11,7 +11,6 @@ function formatPrice(price) {
 function resolveImgPath(src) {
   if (!src) return src;
   if (src.startsWith('/')) return src;
-  // strip leading ./ or ../ segments and make root-relative
   return '/' + src.replace(/^(\.\/|\.\.\/)+/, '');
 }
 
@@ -20,7 +19,7 @@ function renderCart() {
   const entries = Object.entries(cart);
 
   if (entries.length === 0) {
-    cartItems.innerHTML = '<li class="empty">El carrito está vacío</li>';
+    cartItems.innerHTML = '<li class="empty">Cart is empty!</li>';
     cartTotal.innerHTML = `<div class="total-row"><strong>Total:</strong> <span>0,00€</span></div>`;
     return;
   }

@@ -31,7 +31,7 @@ if (!duck) {
                 </div>
             </div>
         </article>
-    ; `
+    `;
 
 document.getElementById('add-btn').addEventListener('click', () => {
     const quantity = Number(document.getElementById('qty').value);

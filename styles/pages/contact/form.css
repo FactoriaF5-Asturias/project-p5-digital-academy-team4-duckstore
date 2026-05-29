@@ -15,7 +15,7 @@
 
 }
 
-input {
+.form-input {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border: 1px #EEF5F7 solid;
@@ -59,7 +59,7 @@ textarea {
 }
 
 
-button {
+.send {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     margin: 0px 0px 0px 40px;
     border: 1px #88d4f7 solid;
