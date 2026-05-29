@@ -1,4 +1,4 @@
-import { ducks } from '../../data/ducks.js';
+import { ducks } from '../data/ducks.js';
 import { loadCart, updateCartItem, removeFromCart } from './cart-storage.js';
 
 const cartItems = document.getElementById('cart_items');
