@@ -31,16 +31,19 @@
     --transicion: 200ms ease;
 }
 
-/* page layout: sticky footer without extra whitespace */
-html, body { height: 100%; }
-body { display: flex; flex-direction: column; min-height: 100vh; }
-main { flex: 1 0 auto; }
 
-/* keep aside cart sizing flexible; summary will be sticky inside it */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main_body_cart {
+    flex: 1 0 auto;
 }
 
 main {
