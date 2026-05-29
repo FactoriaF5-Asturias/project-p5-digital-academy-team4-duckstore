@@ -9,9 +9,12 @@ function formatPrice(price) {
 }
 
 function resolveImgPath(src) {
-  if (!src) return src;
-  if (src.startsWith('/')) return src;
-  return '/' + src.replace(/^(\.\/|\.\.\/)+/, '');
+    try {
+        return new URL(src, window.location.href).href;
+
+    } catch (e) {
+        return src;
+    }
 }
 
 function renderCart() {
