@@ -49,13 +49,21 @@ function renderCart() {
     const duck = ducks.find(d => d.id === id);
     return sum + (duck ? duck.price * qty : 0);
   }, 0);
+  const subtotal = total;
+  const shipping = subtotal === 0 ? 0 : (subtotal >= 50 ? 0 : 5.99);
+  const taxRate = 0.10;
+  const taxes = +(subtotal * taxRate).toFixed(2);
+  const grandTotal = +(subtotal + shipping + taxes).toFixed(2);
 
   cartTotal.innerHTML = `
-    <div class="total-row">
-      <strong>Total:</strong>
-      <span>${formatPrice(total)}</span>
+    <div class="order-summary">
+      <div class="summary-row"><span>Subtotal</span><span>${formatPrice(subtotal)}</span></div>
+      <div class="summary-row"><span>Shipping</span><span>${shipping === 0 ? 'Free' : formatPrice(shipping)}</span></div>
+      <div class="summary-row"><span>Estimated taxes</span><span>${formatPrice(taxes)}</span></div>
+      <hr />
+      <div class="summary-row total-row"><strong>Total</strong><strong>${formatPrice(grandTotal)}</strong></div>
+      <button id="checkout">Checkout</button>
     </div>
-    <button id="checkout">Checkout</button>
   `;
 }
 
