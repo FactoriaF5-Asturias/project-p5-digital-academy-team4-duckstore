@@ -1,0 +1,147 @@
+:root{
+    --color-fondo: #f0f4f8;
+    --color-superficie: #ffffff;
+    --color-texto: #1f2937;
+    --color-texto-suave: #6b7280;
+    --color-primario: #ffb703;
+    --color-primario-oscuro: #fb8500;
+    --color-acento: #219ebc;
+    --color-sombra: rgba(33, 158, 188, 0.18);
+    --color-header:  #6d2a0b;
+
+    --espacio-xs: 0.5rem;
+    --espacio-sm: 0.75rem;
+    --espacio-md: 1rem;
+    --espacio-lg: 1.5rem;
+    --espacio-xl: 2rem;
+
+    --radio-sm: 8px;
+    --radio-md: 12px;
+    --radio-pill: 999px;
+
+    --transicion: 200ms ease;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #ffffff;
+}
+
+.mainpage h1 {
+    font-family: 'Quicksand', Courier, monospace;
+    font-size: 45px;
+    padding-right: 10px;
+}
+h1,
+h2,
+h3,
+p {
+  font-family: "Quicksand", Geneva, Verdana, sans-serif;
+}
+
+.header__logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.header__brand-name {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: -2px;
+  color: #6d2a0b;
+  text-transform: uppercase;
+}
+
+.header__logo-image {
+  width: 60px;
+  height: auto;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-header);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700; /* Yazıları tam bold (kalın) yaptık */
+  display: inline-block;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  color: #a86f13;
+  font-weight: 800;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #b59412;
+}
+
+.nav-link:hover {
+  color: #26231b;
+}
+
+.header__cart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.header__cart-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  width: auto;
+  height: auto;
+}
+
+.header__cart-link:hover {
+  opacity: 0.7;
+}
+
+.header__cart-image {
+  width: 24px !important;
+  max-width: 24px !important;
+  height: 24px !important;
+  max-height: 24px !important;
+  object-fit: contain;
+  display: inline-block;
+}

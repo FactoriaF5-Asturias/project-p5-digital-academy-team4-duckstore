@@ -1,71 +1,127 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Fuentes: "Plus Jakarta Sans" y "Quicksand" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
 
-        <title>Duckstore</title>
-        <link rel="stylesheet" href="./styles/styles.css">
-    </head>
+  <!-- Fuentes: "Plus Jakarta Sans" y "Quicksand" -->
 
-    <body>
-        <main>
-            <container class="mainpage">
-                <div>
-                    <p class="mainpage__collection-red">New Collection</p>
-                    <h1>The world's finest rubber ducks</h1>
-                    <p class="mainpage__padding">Elevate your bath time and collector's shelf with our premium, exuberantly designed rubber ducks. Squishy, vibrand and undeniably joyful.</p>
-                    <a href="Catalog"><button class="mainpage__button-shopnow">Shop now</button></a>
-                </div>
-                <div>
-                     <img src="./assets/img/alllducks.png" alt="Pato clásico" class="mainpage__picture">
-                </div>
-            </container>
-            <section>
-                <container class="presentation-title">
-                    <h2>Featured Ducks</h2>
-                    <p>Discover our most loved floating companions crafted with care and a blush of whimsy</p>
-                </container>
-                <container class="presentation-ducks">
-                    <div class="presentation-ducks__container">
-                        <a href="/Product"><img src="assets/img/evilduck.png" alt="Evil duck"></a>
-                        <br><h3>The evil one</h3> <p class="presentation-ducks__price">$13.37</p>
-                        <p>t3h 3v1l dukkk is h3r3!!11!</p>
-                    </div>
+  <title>Duckstore</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
 
-                    
+<body>
+  <header>
 
-                     </a><div class="presentation-ducks__container-highlight">
-                        <p class="presentation-ducks__bestseller">Bestseller!</p>
-                        <a href="/Product"><img src="assets/img/classicduck.png" alt="Classic duck"></a>
-                        <br><h3>Original Duck</h3> <p class="presentation-ducks__price">$9.99</p>
-                        <p>The timeless original. Perfect squish, perfect float. A must-have.</p>
-                    </div>
+    <a href="index.html" class="header__logo-container">
+      <span class="header__brand-name">DUCKSTORE</span>
+      <img src="assets/img/Duck logo.png" alt="DuckStore Logo" class="header__logo-image">
+    </a>
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="../pages/catalog.html" class="nav-link">Catalog</a></li>
+        <li><a href="./pages/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__cart">
+      <a href="./pages/cart/cart.html" class="header__cart-link" aria-label="View Shopping Cart">
+        <img src="assets/img/order cart img.png" alt="order cart img.png" class="header__cart-image" width="24"
+          height="24">
+      </a>
+    </div>
+
+  </header>
+  <main>
+    <container class="mainpage">
+      <div>
+        <p class="mainpage__collection-red">New Collection</p>
+        <h1>The world's finest rubber ducks</h1>
+        <p class="mainpage__padding">Elevate your bath time and collector's shelf with our premium, exuberantly designed
+          rubber ducks. Squishy, vibrand and undeniably joyful.</p>
+        <a href="Catalog"><button class="mainpage__button-shopnow">Shop now</button></a>
+      </div>
+      <div>
+        <img src="./assets/img/alllducks.png" alt="Pato clásico" class="mainpage__picture">
+      </div>
+    </container>
+    <section>
+      <container class="presentation-title">
+        <h2>Featured Ducks</h2>
+        <p>Discover our most loved floating companions crafted with care and a blush of whimsy</p>
+      </container>
+      <container class="presentation-ducks">
+        <div class="presentation-ducks__container">
+          <a href="/Product"><img src="assets/img/evilduck.png" alt="Evil duck"></a>
+          <br>
+          <h3>The evil one</h3>
+          <p class="presentation-ducks__price">$13.37</p>
+          <p>t3h 3v1l dukkk is h3r3!!11!</p>
+        </div>
 
 
 
-                    <div class="presentation-ducks__container">
-                        <a href="/Product"><img src="assets/img/pirateduck.png" alt="Pirate Duck"></a>
-                        <br><h3>Pirate Duck</h3> <p class="presentation-ducks__price">$14.99</p>
-                        <p>Ready to sail the seven bathtubs in search of bubbly treasures!</p>
-                    </div>
-                </container>
-            </section>
-        </main>
-    </body>
+        </a>
+        <div class="presentation-ducks__container-highlight">
+          <p class="presentation-ducks__bestseller">Bestseller!</p>
+          <a href="/Product"><img src="assets/img/classicduck.png" alt="Classic duck"></a>
+          <br>
+          <h3>Original Duck</h3>
+          <p class="presentation-ducks__price">$9.99</p>
+          <p>The timeless original. Perfect squish, perfect float. A must-have.</p>
+        </div>
+
+
+
+        <div class="presentation-ducks__container">
+          <a href="/Product"><img src="assets/img/pirateduck.png" alt="Pirate Duck"></a>
+          <br>
+          <h3>Pirate Duck</h3>
+          <p class="presentation-ducks__price">$14.99</p>
+          <p>Ready to sail the seven bathtubs in search of bubbly treasures!</p>
+        </div>
+      </container>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <!-- Parte izquierda: Logo y Nombre -->
+      <div class="footer__logo">
+        <!--primero el texto DUCKSTORE-->
+        <a href="index.html" class="footer__logo-link" aria-label="Ir a la página principal de DuckStore">
+          <span class="footer__brand-name">DUCKSTORE</span>
+          <img src="assets/img/Duck logo.png" alt="Logotipo de DuckStore" class="footer__logo-img" />
+        </a>
+      </div>
+
+      <!-- Parte central: Derechos de autor -->
+      <p class="footer__copyright">
+        &copy; 2026 DUCKSTORE. Todos los derechos reservados. Sigue nadando.
+      </p>
+
+      <!-- Parte derecha: Redes sociales -->
+      <div class="footer__social">
+        <a href="https://www.instagram.com/" class="footer__social-link" aria-label="Ir a Instagram">
+          <img src="assets/img/instagram logo.png" alt="Icono de Instagram" class="footer__social-icon" />
+        </a>
+        <a href="https://www.facebook.com/" class="footer__social-link" aria-label="Ir a Facebook">
+          <img src="assets/img/facebook logo.png" alt="Icono de Facebook" class="footer__social-icon" />
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
 
 
 </html>
